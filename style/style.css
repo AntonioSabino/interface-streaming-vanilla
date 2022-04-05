@@ -12,6 +12,7 @@
 body {
   background-color: var(--black);
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 header .container {
@@ -34,4 +35,21 @@ header nav a {
 
 header nav a:hover {
   color: #FFF;
+}
+
+/*Banner Movie*/
+
+.banner-movie {
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)100%), url('../img/banner-madmen.jpg');
+  background-size: cover;
+  font-size: 16px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.banner-movie--title {
+  font-size: 40px;
 }
