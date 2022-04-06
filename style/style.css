@@ -59,6 +59,7 @@ header nav a:hover {
 }
 .banner-movie .container {
   width: 70%;
+  text-align: justify;
 }
 .banner-movie--title {
   font-size: 40px;
