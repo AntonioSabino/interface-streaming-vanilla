@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
 body {
   background-color: var(--black);
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -24,7 +28,6 @@ header .container {
 header .logo {
   color: var(--red);
   font-size: 40px;
-  margin-left: 5px;
 }
 
 header nav a {
@@ -37,10 +40,14 @@ header nav a:hover {
   color: #FFF;
 }
 
+.container {
+  margin-left: 20px;
+}
+
 /*Banner Movie*/
 
 .banner-movie {
-  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)100%), url('../img/banner-madmen.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) 100%), url('../img/banner-madmen.jpg');
   background-size: cover;
   font-size: 16px;
   height: 400px;
@@ -49,6 +56,9 @@ header nav a:hover {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px 0;
+}
+.banner-movie .container {
+  width: 70%;
 }
 .banner-movie--title {
   font-size: 40px;
@@ -73,4 +83,11 @@ header nav a:hover {
 }
 .button i {
   margin-right: 8px;
+}
+
+.box-movie {
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
